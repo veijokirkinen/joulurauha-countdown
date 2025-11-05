@@ -67,16 +67,47 @@ Sovellus:
 
 ## Julkaisu internetiin
 
-### Streamlit Cloud (ilmainen)
-1. Lataa projekti GitHubiin
-2. Mene [share.streamlit.io](https://share.streamlit.io)
-3. Yhdistä GitHub-repositorio
-4. Sovellus on käytettävissä julkisessa osoitteessa
+### 🚀 Streamlit Cloud (ilmainen ja nopea!)
 
-### Muut vaihtoehdot
-- **Heroku** - Pilvipalvelu
-- **Railway** - Moderni deployment
-- **Render** - Yksinkertainen hosting
+1. **Lataa koodi GitHubiin:**
+```bash
+git init
+git add .
+git commit -m "🎄 Initial commit"
+git remote add origin https://github.com/KÄYTTÄJÄ/joulurauha-countdown.git
+git push -u origin main
+```
+
+2. **Deploy Streamlit Cloudiin:**
+   - Mene [share.streamlit.io](https://share.streamlit.io)
+   - Kirjaudu GitHubilla
+   - Valitse repositorio ja `app.py`
+   - Klikkaa "Deploy!"
+
+3. **Widget-käyttö sivustoilla:**
+```html
+<!-- Iframe-upotus -->
+<iframe 
+  src="https://your-app.streamlit.app/?embed=true" 
+  width="100%" 
+  height="400px" 
+  frameborder="0">
+</iframe>
+
+<!-- Suora linkki -->
+<a href="https://your-app.streamlit.app/">🎄 Joulurauha-laskuri</a>
+```
+
+### 📱 Widget-optimoitu versio
+Käytä `app_widget.py` kompaktimpaan näyttöön:
+- `?embed=true` piilottaa Streamlit-branding
+- Pienempi fonttikoko ja tiiviimpi layout
+- Sopii paremmin iframe-upotuksiin
+
+### 🔄 Muut hosting-vaihtoehdot
+- **Railway** - railway.app (ilmainen tier)
+- **Render** - render.com (ilmainen tier)  
+- **Heroku** - heroku.com (maksullinen)
 
 ## Kehitysideoita
 
